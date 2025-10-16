@@ -2,8 +2,25 @@
 The goal of the algorithm is to produce a coherent distribution of patterns over a grid of size
 𝑛 × 𝑚, where the resulting values can be used as a basis for rendering 2D or 3D scenes. The generation process is semi-random: while preserving a degree of randomness, the choices are guided by compatibility constraints between adjacent elements.
 <br>
-![img.png](img.png)
+![img.png](image/img.png)
 <br>
+
+Let's say we have these pieces<br>
+![immagine0.jpg](image/immagine0.jpg)
+![immagine1.jpg](image/immagine1.jpg)
+![immagine2.jpg](image/immagine2.jpg)
+<br>
+![immagine3.jpg](image/immagine3.jpg)
+![immagine4.jpg](image/immagine4.jpg)
+![immagine5.jpg](image/immagine5.jpg)
+<br>
+![immagine6.jpg](image/immagine6.jpg)
+![immagine7.jpg](image/immagine7.jpg)
+<br>
+Each of them is numbered from 1 to 8 and we imagine that each image is made up of a 3x3 matrix, where the white lines are indicated by 1 and the black areas by 0.
+
+![img.png](img.png)
+
 The program takes two arguments as input from the terminal:
 - the number of rows: ROW
 - the number of columns: COL
