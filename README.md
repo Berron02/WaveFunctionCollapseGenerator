@@ -18,6 +18,7 @@ Let's say we have these pieces<br>
 ![immagine7.jpg](image/immagine7.jpg)
 <br>
 Each of them is numbered from 1 to 8 and we imagine that each image is made up of a 3x3 matrix, where the white lines are indicated by 1 and the black areas by 0.
+<br>
 ![img_2.png](image/img_2.png)
 
 The program takes two arguments as input from the terminal:
