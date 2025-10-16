@@ -5,4 +5,6 @@ The goal of the algorithm is to produce a coherent distribution of patterns over
 The program takes two arguments as input from the terminal:
 - the number of rows
 - the number of columns
+<br>
+
 After receiving these two arguments, it begins by reading a dictionary, which contains a collection of definitions for the puzzle pieces to be used in the generation process. Each piece is represented by a 3x3 matrix composed of binary values (0 or 1), which describe its structure and properties.
