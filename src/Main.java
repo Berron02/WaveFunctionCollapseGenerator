@@ -42,12 +42,10 @@ public class Main {
         int[][] init = new Cell(dictionary).getOptCostanti().get(random);
 
         // Collassa la cella iniziale
-        //System.out.println("Cella iniziale (" + startX + ", " + startY + ") - Configurazione: " + random);
         grid[startX][startY].setValue(init);
         grid[startX][startY].setCollapse(true);
         grid[startX][startY].getOpzioni().clear();
         grid[startX][startY].getOpzioni().add(init);
-        //grid[startX][startY].printValue();
 
         // Propaga le restrizioni ai vicini
         propagate(grid, startX, startY, ROW, COL);
@@ -113,6 +111,8 @@ public class Main {
         return -1; // Nessuna corrispondenza
     }
 
+
+    //compare two specific actions from the dictionary
     public static boolean comparePattern(int[][] a, int[][] b) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -124,9 +124,7 @@ public class Main {
         return true;
     }
 
-
-
-
+    //prende la cella con entropia minima (ha poche opzioni disponibili)
     public static Cell getLowestEntropyCell(Cell[][] grid) {
         Cell minCell = null;
         int min = Integer.MAX_VALUE;
@@ -144,6 +142,8 @@ public class Main {
     }
 
     public static void propagate(Cell[][] grid, int x, int y, int ROW, int COL) {
+
+        //Initializes a list of positions to propagate
         ArrayList<int[]> stack = new ArrayList<>();
         stack.add(new int[]{x, y});
 
@@ -167,11 +167,13 @@ public class Main {
                 if (nx >= 0 && nx < ROW && ny >= 0 && ny < COL) {
                     Cell neighbor = grid[nx][ny];
 
+                    //For every neighbor not yet collapsed
                     if (!neighbor.isCollapse()) {
 
-                        // Lista temporanea per opzioni valide in base al vicino
+                        // Temporary list for valid options based on the neighbor
                         ArrayList<int[][]> newOptions = new ArrayList<>();
 
+                        // Filter compatible options
                         for (int[][] option : neighbor.getOpzioni()) {
                             boolean valid = false;
                             for (int[][] currentOption : current.getOpzioni()) {
@@ -183,6 +185,7 @@ public class Main {
                             if (valid) newOptions.add(option);
                         }
 
+                        // If the neighbor's options change, add it to the stack.
                         if (newOptions.size() < neighbor.getOpzioni().size()) {
                             neighbor.setOpzioni(newOptions);
                             stack.add(new int[]{nx, ny});
@@ -195,19 +198,19 @@ public class Main {
 
     public static boolean isCompatible(int[][] a, int[][] b, int dir) {
         switch (dir) {
-            case 0: // sopra
+            case 0: // up
                 for (int i = 0; i < 3; i++)
                     if (a[0][i] != b[2][i]) return false;
                 break;
-            case 1: // sotto
+            case 1: // down
                 for (int i = 0; i < 3; i++)
                     if (a[2][i] != b[0][i]) return false;
                 break;
-            case 2: // destra
+            case 2: // right
                 for (int i = 0; i < 3; i++)
                     if (a[i][2] != b[i][0]) return false;
                 break;
-            case 3: // sinistra
+            case 3: // left
                 for (int i = 0; i < 3; i++)
                     if (a[i][0] != b[i][2]) return false;
                 break;
