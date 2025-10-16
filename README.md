@@ -1,6 +1,7 @@
 # WaveFunctionCollapseGenerator
 The goal of the algorithm is to produce a coherent distribution of patterns over a grid of size
 𝑛 × 𝑚, where the resulting values can be used as a basis for rendering 2D or 3D scenes. The generation process is semi-random: while preserving a degree of randomness, the choices are guided by compatibility constraints between adjacent elements.
+<br>
 ![img.png](img.png)
 <br>
 The program takes two arguments as input from the terminal:
