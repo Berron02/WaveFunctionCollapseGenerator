@@ -17,4 +17,13 @@ After reading the dictionary, the next step involves initializing each cell in t
 - the initial value (set to -1)
 - a boolean flag indicating whether the cell has been collapsed
 - the reference dictionary containing all valid patterns
+<br>
+
+After the initialization phase, a random cell is selected from the grid.
+A random value is then assigned to this cell, chosen from the set of available options defined in the dictionary (in this case, values range from 0 to 7).
+
+At this point, the cell is considered collapsed to a specific value, and its corresponding boolean flag is set to true.
+This state change is then propagated to all adjacent cells, updating their possible options accordingly based on compatibility constraints.
+
+
 

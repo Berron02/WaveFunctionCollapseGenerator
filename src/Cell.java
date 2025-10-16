@@ -32,10 +32,11 @@ public class Cell {
         optCostanti.addAll(opzioni);
     }
 
+    // takes the options from the dictionary and puts them into the option variable
     private void stringToMat(ArrayList<String> dictionary) {
-        this.opzioni.clear();  // Rimuove le opzioni esistenti
+        this.opzioni.clear();  // Remove existing options
         for (String s : dictionary) {
-            s = s.replaceAll("[{}]", ""); // Rimuove parentesi graffe
+            s = s.replaceAll("[{}]", ""); // Remove curly brackets
             String[] nums = s.split(",");
             if (nums.length != 9) {
                 System.err.println("Formato non valido: " + s);
