@@ -122,7 +122,7 @@ A possible output is the following, written to the output.txt file:
 4  1  0  1  6  0  1  0  2  5
 
 <br>
-So
+So, the final render is
 <p align="center">
     <img src="image/img6.png" width="400"/>
 </p>
