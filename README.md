@@ -36,7 +36,7 @@ where the white lines are indicated by `1` and the black areas by `0`.
 <p align="center">
   <img src="image/img_2.png" alt="3x3 matrix representation"/>
 </p>
-Come per il puzzle, bisogna trovare le tessere che combaciano tra di loro.
+As with a puzzle, you have to find the pieces that fit together.
 
 Example
 ![img.png](img.png)
