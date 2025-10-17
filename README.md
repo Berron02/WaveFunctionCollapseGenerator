@@ -44,6 +44,7 @@ Example
     <img src="image/img3.png" width="400"/>
 </p>
 The center tile has the possibility of having those neighbors.
+
 ---
 
 ### 🧾 Input
