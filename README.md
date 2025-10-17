@@ -40,8 +40,9 @@ As with a puzzle, you have to find the pieces that fit together.
 
 Example
 <br>
-<img src="image/img3.png" width="400"/>
-
+<p align="center">
+    <img src="image/img3.png" width="400"/>
+<\p>
 The center tile has the possibility of having those neighbors.
 ---
 
