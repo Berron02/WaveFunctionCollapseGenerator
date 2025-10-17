@@ -42,7 +42,7 @@ Example
 <br>
 <p align="center">
     <img src="image/img3.png" width="400"/>
-<\p>
+</p>
 The center tile has the possibility of having those neighbors.
 ---
 
