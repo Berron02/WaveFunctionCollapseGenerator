@@ -5,7 +5,7 @@ The goal of the algorithm is to produce a coherent distribution of patterns over
 The generation process is semi-random: while preserving a degree of randomness, the choices are guided by compatibility constraints between adjacent elements.
 
 <p align="center">
-  <img src="image/img.png" alt="Main grid example"/>
+  <img src="image/img.png" alt="Main grid example" width="300"/>
 </p>
 
 ---
@@ -13,20 +13,20 @@ The generation process is semi-random: while preserving a degree of randomness, 
 Let's say we have these pieces:
 
 <p align="center">
-  <img src="image/immagine0.jpg" width="100"/>
-  <img src="image/immagine1.jpg" width="100"/>
-  <img src="image/immagine2.jpg" width="100"/>
+  <img src="image/immagine0.jpg" width="80"/>
+  <img src="image/immagine1.jpg" width="80"/>
+  <img src="image/immagine2.jpg" width="80"/>
 </p>
 
 <p align="center">
-  <img src="image/immagine3.jpg" width="100"/>
-  <img src="image/immagine4.jpg" width="100"/>
-  <img src="image/immagine5.jpg" width="100"/>
+  <img src="image/immagine3.jpg" width="80"/>
+  <img src="image/immagine4.jpg" width="80"/>
+  <img src="image/immagine5.jpg" width="80"/>
 </p>
 
 <p align="center">
-  <img src="image/immagine6.jpg" width="100"/>
-  <img src="image/immagine7.jpg" width="100"/>
+  <img src="image/immagine6.jpg" width="80"/>
+  <img src="image/immagine7.jpg" width="80"/>
 </p>
 
 Each of them is numbered from 1 to 8 and we imagine that each image is made up of a 3×3 matrix,  
@@ -39,7 +39,9 @@ where the white lines are indicated by `1` and the black areas by `0`.
 As with a puzzle, you have to find the pieces that fit together.
 
 Example
-![img.png](img.png)
+<br>
+<img src="image/img3.png" width="400"/>
+
 The center tile has the possibility of having those neighbors.
 ---
 
