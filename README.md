@@ -99,7 +99,7 @@ java -cp . Main Cell $row $col #run the code
 ```
 The output will be a file named output.txt, containing an n × m grid filled with values that represent the combination of tiles.
 
-Associamo ad ogni immagine un valore che va da 0 a 7
+We associate a value from 0 to 7 to each image.
 <p align="center">
     <img src="image/img5.png" width="400"/>
 </p>
