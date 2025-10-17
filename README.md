@@ -78,7 +78,7 @@ This state change is then **propagated to all adjacent cells**, updating their p
 ---
 It's like a Sudoku that starts with all the cells empty.
 <p align="center">
-    <img src="image/img4.png" width="400"/>
+    <img src="image/img4.png" width="600"/>
 </p>
 
 Adjacent cells are reduced to those compatible options after the value 1 is assigned to the middle cell.
