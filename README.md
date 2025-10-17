@@ -47,7 +47,7 @@ The center tile has the possibility of having those neighbors.
 
 ---
 
-### 🧾 Input
+### 🧾 How it works
 
 The program takes two arguments as input from the terminal:
 
@@ -75,3 +75,10 @@ A random value is then assigned to this cell, chosen from the set of available o
 
 At this point, the cell is considered **collapsed** to a specific value, and its corresponding boolean flag is set to `true`.  
 This state change is then **propagated to all adjacent cells**, updating their possible options accordingly based on compatibility constraints.
+---
+It's like a Sudoku that starts with all the cells empty.
+<p align="center">
+    <img src="image/img4.png" width="400"/>
+</p>
+
+Adjacent cells are reduced to those compatible options after the value 1 is assigned to the middle cell.
