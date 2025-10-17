@@ -45,11 +45,6 @@ Example
 </p>
 The center tile has the possibility of having those neighbors.
 
-Associamo ad ogni immagine un valore che va da 0 a 7
-<p align="center">
-    <img src="image/img5.png" width="400"/>
-</p>
-
 ---
 
 ### 🧾 How it works
@@ -90,12 +85,38 @@ It's like a Sudoku that starts with all the cells empty.
 
 Adjacent cells are reduced to those compatible options after the value 1 is assigned to the middle cell.
 
+---
+
 ### 💻 How to run the code
 Make sure you're inside the `src` directory:
 
 ```bash
 cd src
 javac Main.java Cell.java
-java -cp . Main Cell 10 10 #run the code
+row=10
+col=10
+java -cp . Main Cell $row $col #run the code
 ```
 The output will be a file named output.txt, containing an n × m grid filled with values that represent the combination of tiles.
+
+Associamo ad ogni immagine un valore che va da 0 a 7
+<p align="center">
+    <img src="image/img5.png" width="400"/>
+</p>
+
+---
+
+### 📄 Example Output 
+
+A possible output is the following, written to the output.txt file:
+
+3  1  0  4  7  4  7  2  6  6  
+0  2  3  2  5  6  5  5  6  6  
+4  1  0  7  7  2  0  1  3  2  
+3  4  2  0  7  1  6  6  0  1  
+7  4  7  4  1  3  2  3  4  2  
+7  2  5  6  6  0  7  7  4  7  
+1  5  0  4  4  4  1  5  3  7  
+2  0  4  4  2  6  6  0  7  1  
+0  2  3  2  0  2  3  2  0  2  
+4  1  0  1  6  0  1  0  2  5
