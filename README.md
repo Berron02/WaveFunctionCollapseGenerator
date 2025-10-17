@@ -120,3 +120,9 @@ A possible output is the following, written to the output.txt file:
 2  0  4  4  2  6  6  0  7  1  
 0  2  3  2  0  2  3  2  0  2  
 4  1  0  1  6  0  1  0  2  5
+
+<br>
+So
+<p align="center">
+    <img src="image/img6.png" width="400"/>
+</p>
